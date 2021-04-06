@@ -9,7 +9,10 @@
 </head>
 <body>
 <tw-story><noscript><tw-noscript>JavaScript needs to be enabled to play ATBT.</tw-noscript></noscript></tw-story>
-<tw-storydata name="ATBT" startnode="1" creator="Twine" creator-version="2.3.13" ifid="E6D0E1AA-8453-4B4B-9CEC-662583F1D94B" zoom="0.6" format="Harlowe" format-version="3.2.1" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">body, tw-story
+<tw-storydata name="ATBT" startnode="1" creator="Twine" creator-version="2.3.13" ifid="E6D0E1AA-8453-4B4B-9CEC-662583F1D94B" zoom="0.6" format="Harlowe" format-version="3.2.1" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">img { width: 100% }
+
+
+body, tw-story
 {
   font-family: Tahoma, serif;
   font-size: 24px;
@@ -19,10 +22,6 @@
   text-align: left; 
   color: #808080;
   
-}
-
-img {
-  max-width: 100%;
 }
 
 tw-sidebar
@@ -123,56 +122,53 @@ tw-enchantment.link {
 **/
 #audio-overlay{position:fixed;top:0;right:0;left:0;bottom:0;z-index:100000;background:#111}.lds-ring{display:block;position:relative;top:20%;margin:auto;width:20em;height:20em}.lds-ring div{box-sizing:border-box;display:block;position:absolute;width:18em;height:18em;margin:6px;border:6px solid #fff;border-radius:50%;-webkit-animation:lds-ring 1.2s cubic-bezier(.5,0,.5,1) infinite;animation:lds-ring 1.2s cubic-bezier(.5,0,.5,1) infinite;border-color:#fff transparent transparent transparent}.lds-ring div:nth-child(1){-webkit-animation-delay:-.45s;animation-delay:-.45s}.lds-ring div:nth-child(2){-webkit-animation-delay:-.3s;animation-delay:-.3s}.lds-ring div:nth-child(3){-webkit-animation-delay:-.15s;animation-delay:-.15s}@-webkit-keyframes lds-ring{0%{-webkit-transform:rotate(0);transform:rotate(0)}100%{-webkit-transform:rotate(360deg);transform:rotate(360deg)}}@keyframes lds-ring{0%{-webkit-transform:rotate(0);transform:rotate(0)}100%{-webkit-transform:rotate(360deg);transform:rotate(360deg)}}input#audio-volume{width:100%;margin:2em 0}span#vol-title{position:relative;bottom:-1em;font-size:1rem;float:left}tw-link#audio-mute{display:inline-block;padding:.3em;width:90%;text-decoration:none;color:#111;background:#eee;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;border:1px solid #000}tw-link#audio-mute:hover{opacity:.8}tw-link#audio-mute:active{opacity:.6}tw-link#audio-mute span{display:inline-block;width:1em;position:relative;height:1em;top:.2em;background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAQAAABLCVATAAABF0lEQVR4Ae2VJVREYRSEB3ftuFUaLhF6I22iF7TgLr1XvAc849CwiBac9Xtm3e97cefp/Pec7+mdH0mZrGtMoBomyAEHfjGHXKg07gNxeUS3BuMAqGZswE7YcOIYgqgG7BFlSQgTAgKysC2jNjQmghFQCOpMxq+QmQgmFATU4kcq/YlgfKB1lALUqFSukRIbEwpy4BTZPM/Bu9TaQ362KAsl56sAtSR+Sgv6RCFdr/gjBYiuj65c3J0eNEmXz95TgybocvmoJj3avf5l59L1iD/WglZCP7/uh8zgeQ6epdahaZENFIPCCFvEYNPW4JdNazBGzhkj6caCbSc02DRRu0+8RR/+rb7wx6D505HxCVKvG0zpp+yknHe8MBDkT/s8AAAAAElFTkSuQmCC);background-size:contain}tw-link#audio-mute.muted span{right:4px;background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAASElEQVR4Ae3WsQ0AMAjAsJ7ez9MTGEmlRGL3BJzPq6prw2DDYMNgw2DDYMOwh1kAMUygQIEC2RejANVxnVE9aDOqJ39GVZWqB5Z3r1ndBX5oAAAAAElFTkSuQmCC)}div#audio-volume{float:left}div#audio-controls{font:100% Georgia,serif;font-size:1.5em;position:fixed;width:8em;height:100%;padding:1em 2em;z-index:10000;top:0;left:0;bottom:0;background:#333;color:#eee;transition:left .3s;text-align:center}div#audio-controls.closed{left:-10.5em}div#audio-controls tw-link#audio-panel-toggle{display:inline-block;width:1.5em;position:absolute;height:1.5em;top:0;right:0;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;text-decoration:none;background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAQAAABLCVATAAAAYklEQVR4Ae3MsQFAMAAEQMDEagCgN4EuVTrbPcACeUBugDNeSdMQomI0PmYdTEYD9DA5jcVoBKuxGY1kNQ6jGRSaGaIj8gw1aI/KYVUSNqsSzMpiVT2zMjlVN0fqVW5o2luMGHqkQmD9cPYAAAAASUVORK5CYII=);background-size:contain}div#audio-controls.closed tw-link#audio-panel-toggle{background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAQAAABLCVATAAAAZElEQVR4Ae3TpwGAMBQAUfrEeHB0cDhcXBSO7ehlgBw9N8BL/YZO95r6uA/UEbOv+ylfHRJ9z1BWLynKJqmWohyS6ijKOygKCpmjZYqXTTA2xUiCsShGAMw8/Q3ArFgFMHek0w3WCaR74eO2YQAAAABJRU5ErkJggg==)}@media screen and (max-width:800px){div#audio-controls.closed{left:-12em}div#audio-controls.closed tw-link#audio-panel-toggle{right:-1.5em}}div#story-menu{margin:1em 0}tw-link.story-menu{width:100%;display:block;font-weight:400;background:#ccc;font-size:.9em;padding:.1em 0;color:#111;border:1px solid #333}tw-link.story-menu.hide{display:none}tw-link.story-menu:hover{opacity:.8}tw-link.story-menu:active{opacity:.6}input[type=range].hal{-webkit-appearance:none;width:100%;margin:2.25px 0}input[type=range].hal:focus{outline:0}input[type=range].hal::-webkit-slider-runnable-track{width:100%;height:15.5px;cursor:pointer;box-shadow:.4px .4px 1px #000,0 0 .4px #0d0d0d;background:#111;border-radius:0;border:0 solid #010101}input[type=range].hal::-webkit-slider-thumb{box-shadow:0 0 2.2px rgba(17,17,17,.1),0 0 0 rgba(30,30,30,.1);border:0 solid #fff;height:20px;width:11px;border-radius:0;background:rgba(255,255,255,.93);cursor:pointer;-webkit-appearance:none;margin-top:-2.25px}input[type=range].hal:focus::-webkit-slider-runnable-track{background:#444}input[type=range].hal::-moz-range-track{width:100%;height:15.5px;cursor:pointer;box-shadow:.4px .4px 1px #000,0 0 .4px #0d0d0d;background:#111;border-radius:0;border:0 solid #010101}input[type=range].hal::-moz-range-thumb{box-shadow:0 0 2.2px rgba(17,17,17,.1),0 0 0 rgba(30,30,30,.1);border:0 solid #fff;height:20px;width:11px;border-radius:0;background:rgba(255,255,255,.93);cursor:pointer}input[type=range].hal::-ms-track{width:100%;height:15.5px;cursor:pointer;background:0 0;border-color:transparent;color:transparent}input[type=range].hal::-ms-fill-lower{background:#000;border:0 solid #010101;border-radius:0;box-shadow:.4px .4px 1px #000,0 0 .4px #0d0d0d}input[type=range].hal::-ms-fill-upper{background:#111;border:0 solid #010101;border-radius:0;box-shadow:.4px .4px 1px #000,0 0 .4px #0d0d0d}input[type=range].hal::-ms-thumb{box-shadow:0 0 2.2px rgba(17,17,17,.1),0 0 0 rgba(30,30,30,.1);border:0 solid #fff;height:20px;width:11px;border-radius:0;background:rgba(255,255,255,.93);cursor:pointer;height:15.5px}input[type=range].hal:focus::-ms-fill-lower{background:#111}input[type=range].hal:focus::-ms-fill-upper{background:#444}
 /** End of HAL code */
-</style><script role="script" id="twine-user-script" type="text/twine-javascript">
-var imagesDomain = "https://intobodmin.github.io/all-the-beautiful-things/images/";
-
+</style><script role="script" id="twine-user-script" type="text/twine-javascript">var imagesDomain = "https://intobodmin.github.io/all-the-beautiful-things/images/";
 var images = [
-"0b.jpg",
-"Animated-GIF-downsized_large.gif",
-"slate 1.jpg",
-"slate 10.jpg",
-"slate 10c.jpg",
-"slate 11 sized.jpg",
-"slate 12.jpg",
-"slate 13.jpg",
-"slate 14b.jpg",
-"slate 15b.jpg",
-"slate 15c.jpg",
-"slate 16.jpg",
-"slate 16b.jpg",
-"slate 17.jpg",
-"slate 18.jpg",
-"slate 19.jpg",
-"slate 21.jpg",
-"slate 22.jpg",
-"slate 23.jpg",
-"slate 24.jpg",
-"slate 25.jpg",
-"slate 26.jpg",
-"slate 27.jpg",
-"slate 28jpg.jpg",
-"slate 29.jpg",
-"slate 2b.jpg",
-"slate 3.jpg",
-"slate 30.jpg",
-"slate 33.jpg",
-"slate 34.jpg",
-"slate 4 sized.jpg",
-"slate 5.jpg",
-"slate 6.jpg",
-"slate 7.jpg",
-"slate 8b.jpg",
-"slate 9.jpg",
-"slate31(new).jpg",
-"slate32(new).jpg"
+	"0b.jpg",
+	"slate 1.jpg",
+	"slate 10.jpg",
+	"slate 10c.jpg",
+	"slate 11 sized.jpg",
+	"slate 12.jpg",
+	"slate 13.jpg",
+	"slate 14b.jpg",
+	"slate 15b.jpg",
+	"slate 15c.jpg",
+	"slate 16.jpg",
+	"slate 16b.jpg",
+	"slate 17.jpg",
+	"slate 18.jpg",
+	"slate 19.jpg",
+	"slate 21.jpg",
+	"slate 22.jpg",
+	"slate 23.jpg",
+	"slate 24.jpg",
+	"slate 25.jpg",
+	"slate 26.jpg",
+	"slate 27.jpg",
+	"slate 28jpg.jpg",
+	"slate 29.jpg",
+	"slate 2b.jpg",
+	"slate 3.jpg",
+	"slate 30.jpg",
+	"slate 33.jpg",
+	"slate 34.jpg",
+	"slate 4 sized.jpg",
+	"slate 5.jpg",
+	"slate 6.jpg",
+	"slate 7.jpg",
+	"slate 8b.jpg",
+	"slate 9.jpg",
+	"slate31(new).jpg",
+	"slate32(new).jpg"
 ]
 
 images.forEach(function(slug){
 	var img = new Image();
-	img.src = imagesDomain+slug;	
-	//console.log("preloading", imagesDomain+slug)
+  img.src = imagesDomain+slug;	
+	console.log(imagesDomain+slug)
 	img.onload = function(e){
-		//console.log("loaded", e);	
+		console.log(e);	
 	};
 })
 
@@ -882,7 +878,7 @@ And so...
 [[you leap head first into the darkness, right into....-&gt;reviews]]
 
 ]]]]]]]]]
-]]]]]]</tw-passagedata><tw-passagedata pid="48" name="skull" tags="SLATE33" position="3872,849" size="100,100">&lt;img src=&quot;https://intobodmin.github.io/all-the-beautiful-things/images/slate%2033.jpg&quot; width=&quot;600&quot; , alt=&quot;a beautiful yellow butterfly sittin on top of an old skull&quot; /&gt;
+]]]]]]</tw-passagedata><tw-passagedata pid="48" name="skull" tags="SLATE33" position="3872,847.3333333333334" size="100,100">&lt;img src=&quot;https://intobodmin.github.io/all-the-beautiful-things/images/slate%2033.jpg&quot; width=&quot;600&quot; , alt=&quot;a beautiful yellow butterfly sittin on top of an old skull&quot; /&gt;
 (group: &#39;playing&#39;, &#39;stop&#39;) (track:&#39;slate33&#39;,&#39;loop&#39;,&#39;true&#39;) (track: &#39;slate33&#39;, &#39;play&#39;)
 &lt;==
 As you walk out of the Old Library and up the hill towards the Beacon... full of all that joy and love and adventure... you are overcome by [a quiet moment of reflection.]&lt;MOR|(click:?MOR)[
@@ -903,12 +899,10 @@ The teachers also think it&#39;s a good idea. So they join in too!
 
 [Together, you continue up the hill... ]&lt;UpHill|(click:?UpHill)[(t8n: &quot;fade&quot;)[until the fresh wind tickles your spines... [[until you can see into the distance...-&gt;Meadow]]
 
-]]]]]]]]]]]]]]]</tw-passagedata><tw-passagedata pid="49" name="Meadow" tags="SLATE34" position="4007,858" size="100,100">&lt;img src=&quot;https://intobodmin.github.io/all-the-beautiful-things/images/slate%2034.jpg&quot; width=&quot;900&quot;, alt=&quot;hedghog sitting in high grass by the Bodmin Beacon looking into the distance&quot; /&gt;
+]]]]]]]]]]]]]]]</tw-passagedata><tw-passagedata pid="49" name="Meadow" tags="SLATE34" position="3953,969" size="100,100">&lt;img src=&quot;https://intobodmin.github.io/all-the-beautiful-things/images/slate%2034.jpg&quot; width=&quot;900&quot;, alt=&quot;hedghog sitting in high grass by the Bodmin Beacon looking into the distance&quot; /&gt;
 (group: &#39;playing&#39;, &#39;stop&#39;)(track:&#39;slate34&#39;,&#39;loop&#39;,&#39;true&#39;) (track: &#39;slate34&#39;, &#39;play&#39;)
 &lt;==
-You all walk through the meadow and see butterflies and bees, and beautiful flowers.
-
-You see thousands of blades of grass, swaying in the wind.
+You all walk through the meadow and see butterflies and bees, and beautiful flowers. You see thousands of blades of grass, swaying in the wind.
 
 In the distance you see sheep and... maybe even the Cheese Ring?
 
@@ -923,9 +917,7 @@ We invite you to clear your throat and give it a go!
 
 [Yes. Really.]&lt;Really|(click:?Really)[
 
-Loud enough for Saint Petroc to hear you all the way down the hill.
-
-Loud enough for all of Bodmin to hear you! 
+Loud enough for Saint Petroc to hear you all the way down the hill. Loud enough for all of Bodmin to hear you! 
 
 You know you&#39;ll regret it if you don&#39;t put in the effort... 
 
@@ -1056,44 +1048,44 @@ deep down you know that was the right thing and slowly you shuffle back to the [
 &lt;==
 Mmnnnn. The church seems to be completely empty. But what are those saints on the stained glass window pointing at? The casket below them? 
 
-You bend over to have &lt;span class=&#39;white&#39;&gt;[[a closer look...-&gt; church]]&lt;/span&gt;</tw-passagedata><tw-passagedata pid="56" name="hal.tracks" tags="" position="397,25" size="100,100">intro: https://intobodmin.github.io/all-the-beautiful-things/sound/IntroSLATEnew.mp3
-slate1: https://intobodmin.github.io/all-the-beautiful-things/sound/SLATE1&amp;2new.mp3
-slate3: https://intobodmin.github.io/all-the-beautiful-things/sound/SLATE3new.mp3
-slate5: https://intobodmin.github.io/all-the-beautiful-things/sound/SLATE5new.mp3
+You bend over to have &lt;span class=&#39;white&#39;&gt;[[a closer look...-&gt; church]]&lt;/span&gt;</tw-passagedata><tw-passagedata pid="56" name="hal.tracks" tags="" position="397,25" size="100,100">intro: https://intobodmin.github.io/all-the-beautiful-things/sound/INTROSLATENC.mp3
+slate1: https://intobodmin.github.io/all-the-beautiful-things/sound/SLATES1and2NC.mp3
+slate3: https://intobodmin.github.io/all-the-beautiful-things/sound/SLATE3starlingsNC.mp3
+slate5: https://intobodmin.github.io/all-the-beautiful-things/sound/SLATE5NC.mp3
 slate6: https://intobodmin.github.io/all-the-beautiful-things/sound/SLATE 6.mp3
 slate7: https://intobodmin.github.io/all-the-beautiful-things/sound/SLATE7new.mp3
 slate8violin: https://intobodmin.github.io/all-the-beautiful-things/sound/SLATE8fiddlequieter.mp3
-slate8: https://intobodmin.github.io/all-the-beautiful-things/sound/SLATE8PT2new.mp3
-slate8pt2: https://intobodmin.github.io/all-the-beautiful-things/sound/SLATE 8 PT 2.mp3
-slate8b: https://intobodmin.github.io/all-the-beautiful-things/sound/SLATE8bnew.mp3
+slate8: https://intobodmin.github.io/all-the-beautiful-things/sound/SLATE82newNC.mp3
+slate8pt2: https://intobodmin.github.io/all-the-beautiful-things/sound/SLATE82NC.mp3
+slate8b: https://intobodmin.github.io/all-the-beautiful-things/sound/SLATE8bNC.mp3
 slate10b: https://intobodmin.github.io/all-the-beautiful-things/sound/SLATE 10B to 12.mp3
 slate10c: https://intobodmin.github.io/all-the-beautiful-things/sound/SLATE 10C.mp3
-slate11: https://intobodmin.github.io/all-the-beautiful-things/sound/SLATE 11.mp3
+slate11: https://intobodmin.github.io/all-the-beautiful-things/sound/SLATE11NC.mp3
 slate13&amp;18: https://intobodmin.github.io/all-the-beautiful-things/sound/SLATE13&amp;18DEADHEDGEHOGnew.mp3
-slate14b: https://intobodmin.github.io/all-the-beautiful-things/sound/SLATE 14B.mp3
-slate15: https://intobodmin.github.io/all-the-beautiful-things/sound/SLATE15new.mp3
+slate14b: https://intobodmin.github.io/all-the-beautiful-things/sound/SLATE14BNC.mp3
+slate15: https://intobodmin.github.io/all-the-beautiful-things/sound/SLATE15NC.mp3
 slate15b: https://intobodmin.github.io/all-the-beautiful-things/sound/lion 15.mp3
-slate16: https://intobodmin.github.io/all-the-beautiful-things/sound/SLATE 16.mp3
-slate17: https://intobodmin.github.io/all-the-beautiful-things/sound/SLATE17new.mp3
-slate18: https://intobodmin.github.io/all-the-beautiful-things/sound/SLATE 18_01.mp3
-slate19: https://intobodmin.github.io/all-the-beautiful-things/sound/SLATE19johnarnold.mp3
+slate16: https://intobodmin.github.io/all-the-beautiful-things/sound/SLATE16NC.mp3
+slate17: https://intobodmin.github.io/all-the-beautiful-things/sound/SLATE17NC.mp3
+slate18: https://intobodmin.github.io/all-the-beautiful-things/sound/SLATE181NC.mp3
+slate19: https://intobodmin.github.io/all-the-beautiful-things/sound/SLATE19NC.mp3
 slate21: https://intobodmin.github.io/all-the-beautiful-things/sound/SLATE 21.mp3
 slate22: https://intobodmin.github.io/all-the-beautiful-things/sound/SLATE 22.mp3
-slate23: https://intobodmin.github.io/all-the-beautiful-things/sound/SLATE23new.mp3
-slate24: https://intobodmin.github.io/all-the-beautiful-things/sound/SLATE 24.mp3
+slate23: https://intobodmin.github.io/all-the-beautiful-things/sound/SLATE23NC.mp3
+slate24: https://intobodmin.github.io/all-the-beautiful-things/sound/SLATE24NC.mp3
 slate25: https://intobodmin.github.io/all-the-beautiful-things/sound/SLATE25medieval quiet.mp3
 slate26: https://intobodmin.github.io/all-the-beautiful-things/sound/SLATE26medievalnormal.mp3
-slate27a: https://intobodmin.github.io/all-the-beautiful-things/sound/SLATE27Anew.mp3
-slate27: https://intobodmin.github.io/all-the-beautiful-things/sound/SLATE 27.mp3
-slate28: https://intobodmin.github.io/all-the-beautiful-things/sound/SLATE28new.mp3
+slate27a: https://intobodmin.github.io/all-the-beautiful-things/sound/SLATE27ANC.mp3
+slate27: https://intobodmin.github.io/all-the-beautiful-things/sound/SLATE27NC.mp3
+slate28: https://intobodmin.github.io/all-the-beautiful-things/sound/SLATE28NC.mp3
 slate29: https://intobodmin.github.io/all-the-beautiful-things/sound/SLATE29no swear.mp3
 slate30b: https://intobodmin.github.io/all-the-beautiful-things/sound/SLATE30bwithchoir.mp3
-slate30: https://intobodmin.github.io/all-the-beautiful-things/sound/SLATE30new.mp3
-slate30c: https://intobodmin.github.io/all-the-beautiful-things/sound/SLATE 30C.mp3
-slate31: https://intobodmin.github.io/all-the-beautiful-things/sound/SLATE31new.mp3
-slate32: https://intobodmin.github.io/all-the-beautiful-things/sound/SLATE32new.mp3
-slate33: https://intobodmin.github.io/all-the-beautiful-things/sound/SLATE 33.mp3
-slate34: https://intobodmin.github.io/all-the-beautiful-things/sound/SLATE34.mp3
+slate30: https://intobodmin.github.io/all-the-beautiful-things/sound/SLATE30NC.mp3
+slate30c: https://intobodmin.github.io/all-the-beautiful-things/sound/SLATE30CNC.mp3
+slate31: https://intobodmin.github.io/all-the-beautiful-things/sound/SLATE31NC.mp3
+slate32: https://intobodmin.github.io/all-the-beautiful-things/sound/SLATE32NC.mp3
+slate33: https://intobodmin.github.io/all-the-beautiful-things/sound/SLATE33NC.mp3
+slate34: https://intobodmin.github.io/all-the-beautiful-things/sound/SLATE34NC.mp3
 slate35: https://intobodmin.github.io/all-the-beautiful-things/sound/SLATE 35.mp3</tw-passagedata><tw-passagedata pid="57" name="slate 27b" tags="SLATE27b" position="3440,1126" size="100,100">&lt;==
 Oh dear your spines seem to have become quite dishelleved. Fortunately, there is a marvellous hairdresser on Fore Street. Apparently she can sort out anyone&#39;s hair. Even a hedgehog&#39;s.
 
